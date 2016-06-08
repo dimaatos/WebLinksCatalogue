@@ -139,6 +139,10 @@
       <Project>{d3234058-5280-49d5-8ac4-07526c22430e}</Project>
       <Name>WebLinksCatalogue.BusinessLogic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WebLinksCatalogue.Domain\WebLinksCatalogue.Domain.csproj">
+      <Project>{B53213B6-896E-4AB1-8055-6E301F405DEC}</Project>
+      <Name>WebLinksCatalogue.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

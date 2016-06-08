@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebLinksCatalogue.WebUI.Models.WebLinkModel>
+﻿@model IEnumerable<WebLinksCatalogue.Domain.Entities.Link>
 
 @{
     ViewBag.Title = "Index";
@@ -12,38 +12,14 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.Title)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Link)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Views)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ThumbnailURL)
-        </th>
-        <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Link)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Views)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ThumbnailURL)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.DisplayFor(modelItem => item.Title)
         </td>
     </tr>
 }

@@ -10,7 +10,7 @@ namespace WebLinksCatalogue.Domain.EF
 {
     public class EfDbContext : DbContext
     {
-        public EfDbContext() : base("WebLinksCatalogue")
+        public EfDbContext() : base("name=DBConnectionString")
         {
 
         }

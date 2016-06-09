@@ -15,6 +15,7 @@ namespace WebLinksCatalogue.Domain.Entities
         public string Title { get; set; }
         public string Description { get; set; }
         public int? CategoryId { get; set; }
-        //public Category Category { get; set; }
+        public Category Category { get; set; }
+        public ICollection<Comment> Comments { get; set; }
     }
 }

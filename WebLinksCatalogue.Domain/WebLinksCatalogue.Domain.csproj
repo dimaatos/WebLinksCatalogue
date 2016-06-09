@@ -51,11 +51,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\CommentRepository.cs" />
+    <Compile Include="EF\Config\CategoryEntityConfig.cs" />
+    <Compile Include="EF\Config\CommentEntityConfig.cs" />
+    <Compile Include="EF\Config\LinkEntityConfig.cs" />
     <Compile Include="EF\EFDbContext.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\Link.cs" />
+    <Compile Include="Repositories\LinkRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

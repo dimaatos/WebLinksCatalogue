@@ -11,6 +11,6 @@ namespace WebLinksCatalogue.Domain.Entities
         public int Id { get; set; }
         public string Text { get; set; }
         public Link Link { get; set; }
-        public int LinkId { get; set; }
+        public int? LinkId { get; set; }
     }
 }

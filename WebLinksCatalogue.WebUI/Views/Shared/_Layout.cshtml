@@ -6,10 +6,12 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div>
-        @Html.ActionLink("Links", "Links");
-        @Html.ActionLink("Categories", "Categories");
-        @RenderBody()
-    </div>
+<div>
+    @Html.ActionLink("Links", "Links");
+    @Html.ActionLink("Categories", "Categories");
+    @RenderBody()
+</div>
+
+    @RenderSection("scripts", false)
 </body>
 </html>
